@@ -3,9 +3,8 @@ python:
 - 3.6
 before_install:
 - python --version
-- pip install -U pip
-- pip install -U pytest
-- pip install -U pytest-cov
+- pip install -r requirements.txt
 script:
+- pylint_runner
 - pytest --cov=com.ope com/ope/test/
 
