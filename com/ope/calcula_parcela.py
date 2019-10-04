@@ -1,10 +1,12 @@
-def valorPagamento(valor, diasAtraso):
+"""sistemas valor pagamento"""
 
-    if (valor < 0):
+def valorpagamento(valor, diasatraso):
+    """verifica o valor a ser pago de uma prestação"""
+
+    if valor < 0:
         return None
-    if (diasAtraso > 0):
+    if diasatraso > 0:
         multa = valor * 0.03
-        adicionalAtraso = valor * (diasAtraso * 0.01)
-        return valor + multa + adicionalAtraso
-    else:
-        return valor
+        adicionalatraso = valor * (diasatraso * 0.01)
+        return valor + multa + adicionalatraso
+    return valor
