@@ -1,6 +1,7 @@
 """programa conta corrente"""
 
 class Contacorrente:
+    """cria classe conta corrente"""
 
     def __init__(self, numero, nomecorrentista, saldo=0.0):
         """recebe parametro"""
